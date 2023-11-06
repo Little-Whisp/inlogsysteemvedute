@@ -19,7 +19,7 @@ $email = $_SESSION['loggedInUser']['email'];
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Stylesheet/Stylesheet.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="Stylesheet/Stylesheet.css?v=<?php echo time(); ?>">
         <title>Secure page</title>
 </head>
 
@@ -30,7 +30,7 @@ $email = $_SESSION['loggedInUser']['email'];
 
 <ul>
     <h1>
-        <li> <p>You are logged in! Welkom, <?= $email ?></p></li>
+        <li> <p>You are logged in! Welcome, <?= $email ?></p></li>
 
         <h1>
 </ul>

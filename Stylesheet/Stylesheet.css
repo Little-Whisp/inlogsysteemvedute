@@ -7,12 +7,6 @@
 
 }
 
-body{
-    font-family: 'Avenir Next LT Pro', sans-serif, Regular;
-}
-/* end text info */
-
-
 
 * {
     box-sizing: border-box;
@@ -26,7 +20,7 @@ html {
 
 /*Background (Index page)*/
 body {
-    background-color: white;
+    background-color: #293341;
     font-size: 18px;
     font-family: 'Avenir Next LT Pro', sans-serif, Regular;
     margin: 0;
@@ -110,7 +104,7 @@ h2 {
     font-family: 'Avenir Next LT Pro', sans-serif, Regular;
     font-size: 3em;
     padding-top: 10vh;
-    color: black;
+    color: #ffffff;
     text-align: center;
     height: 20vh;
     /*background-image: url(https://cdn.discordapp.com/attachments/372804664053334016/894930878491426816/transumanismul-si-promisiunea-nemuririi-24837.png);*/
@@ -185,47 +179,9 @@ a:hover {
 
 
 
-/*color text training list*/
-li a {
-    color: #282828 ;
-    font-weight: normal;
-}
-/*color text training list end*/
-
-
-
-/*Images settings*/
-img {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    float: left;
-}
-
-img {
-    float: left;
-    max-width: 10%;
-    max-height: 10%;
-}
-/*Images settings end*/
-
-
-
-/* Middle section (Form)*/
-section div {
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    width: 100%;
-}
-/* Middle section (Form)*/
-
-
-
 /*Middle section background (index page)*/
 section {
-    background-color: rgb(255, 255, 255);
+    background-color: #293341;
     margin: 20px auto;
     font-size: 1.1em;
     max-width: 800px;
@@ -256,8 +212,8 @@ input[id=info], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4DA686;
-    color: white;
+    background-color: #ffffff;
+    color: #21252b;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -265,138 +221,17 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: lightgreen;
+    background-color: #ffffff;
+    color: #282828;
 }
 /*Form Design end*/
 
-
-
-/* Calender design */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Avenir Next LT Pro', sans-serif, Regular;
-}
 
 html {
     font-size: 62.5%;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    /*background-color: #12121f;*/
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.calendar {
-    width: 45rem;
-    height: 52rem;
-    background-color: #282828;
-    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
-}
-
-.month {
-    width: 100%;
-    height: 12rem;
-    background-color: #4DA686;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    text-align: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-}
-
-.month i {
-    font-size: 2.5rem;
-    cursor: pointer;
-}
-
-.month h1 {
-    font-size: 3rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
-}
-
-.month p {
-    font-size: 1.6rem;
-}
-
-.weekdays {
-    width: 100%;
-    height: 5rem;
-    padding: 0 0.4rem;
-    display: flex;
-    align-items: center;
-}
-
-.weekdays div {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    width: calc(44.2rem / 7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-}
-
-.days {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.2rem;
-}
-
-.days div {
-    font-size: 1.4rem;
-    margin: 0.3rem;
-    width: calc(40.2rem / 7);
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-    transition: background-color 0.2s;
-}
-
-.days div:hover:not(.today) {
-    background-color: #4DA686;
-    border: 0.2rem solid #ffffff;
-    cursor: pointer;
-}
-
-.prev-date,
-.next-date {
-    opacity: 0.5;
-}
-
-.today {
-    background-color: #4DA686;
-}
-
-footer {
-    background-color: #4DA686;
-    height:30px;
-    display: flex;
-    margin: auto;
-    position:fixed;
-    flex-direction: column;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    left:0px;
-    bottom:0px;
-    width:100%;
-
-}
 
 .left-col, .right-col{
     background-color: #ffffff;
@@ -427,32 +262,15 @@ footer {
 
 
 
-body{
-    margin-top:0px;
-    background: #ffffff;
-}
-
-
-
-/* removing bullets*/
-ul {
-    list-style-type: none;
-}
-/* removing bullets end*/
-
-
-
 /* login page*/
 label {
     display: inline-block;
+    color: white;
     width: 120px;
     font-weight: bold;
 }
 
-/* This would be the way to go without PHP */
-tbody tr:nth-child(odd) {
-    background-color: lightgrey;
-}
+
 tfoot td {
     text-align: center;
     font-weight: bold;

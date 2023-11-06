@@ -6,7 +6,7 @@
 if(isset($_POST['submit'])) {
 
     //I use require_once to only make connection with the database when I use the submit button.
-    require_once "../includes/database.php";
+    require_once "includes/database.php";
 
 
     //These are for the SQL Injections//
@@ -48,11 +48,11 @@ if(isset($_POST['submit'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Stylesheet/Stylesheet.css?v=<?php echo time(); ?>">
-    <title>Registreren</title>
+    <link rel="stylesheet" href="Stylesheet/Stylesheet.css?v=<?php echo time(); ?>">
+    <title>Register</title>
 </head>
 <body>
-<h2>Nieuwe gebruiker registeren</h2>
+<h2>Register</h2>
 <section>
 <form action="" method="post">
     <div class="data-field">
@@ -61,12 +61,12 @@ if(isset($_POST['submit'])) {
         <span class="errors"><?= $errors['email'] ?? '' ?></span>
     </div>
     <div class="data-field">
-        <label for="password">Wachtwoord</label>
+        <label for="password">Password</label>
         <input id="password" type="password" name="password" value="<?= $password ?? '' ?>"/>
         <span class="errors"><?= $errors['password'] ?? '' ?></span>
     </div>
     <div class="data-submit">
-        <input type="submit" name="submit" value="Registreren"/>
+        <input type="submit" name="submit" value="Register"/>
     </div>
 </form>
 </section>
