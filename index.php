@@ -16,7 +16,7 @@ if(isset($_SESSION['loggedInUser'])) {
 if (isset($_POST['submit'])) {
 
     //I use require_once to only make connection with the database when I use the submit button.
-    require_once "includes/database.php";
+    require_once "../includes/database.php";
 
     //These are for the SQL Injections//
     $email = mysqli_escape_string($db, $_POST['email']);
@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Stylesheet/Stylesheet.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../Stylesheet/Stylesheet.css" />
 
     <title>Login</title>
 </head>
@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
             <span class="errors"><?= $errors['email'] ?? '' ?></span>
         </div>
         <div>
-            <label for="password">Password</label>
+            <label for="password">Wachtwoord</label>
             <input id="password" type="password" name="password" />
             <!-- If 'password' field is not filled in it will show error = 'password can't be empty' -->
             <span class="errors"><?= $errors['password'] ?? '' ?></span>
@@ -118,7 +118,7 @@ if (isset($_POST['submit'])) {
 
     <ul>
         <h1>
-            <a href="register.php">Don't have an account yet?</a>
+            <li><a href="register.php">Don't have an account yet?</a></li>
 
             <h1>
     </ul>
